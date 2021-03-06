@@ -5,6 +5,7 @@
     --gris: #636e72;
     --blanco: #ffffff;
     --negro: #000000;
+    --cards: #0fbcf9;
 }
 
 html {
@@ -81,7 +82,7 @@ img {
     flex-direction: column;
 }
 
-.barra {
+.contenido-header {
     background-color: var(--gris);
     padding: 1rem;
 }
@@ -114,4 +115,41 @@ img {
 
 .nombre {
     color: var(--blanco);
+}
+
+
+/* Principal */
+
+.central {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .central {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+.central__presentacion {
+    color: var(--blanco);
+    text-align: justify;
+    background-color: var(--cards);
+    border-radius: 3rem;
+    box-shadow: 10px 5px 5px black;
+    line-height: 1.2;
+    font-family: var(--fuenteParrafos);
+    font-weight: 300;
+}
+
+.central__titulo {
+    margin-left: 3rem;
+}
+
+.central__parrafo {
+    padding-bottom: 1.2rem;
+    margin-left: 3rem;
+    margin-right: 2.5rem;
 }
