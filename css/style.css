@@ -63,7 +63,8 @@ h4 {
     font-size: 1.8rem;
 }
 
-img {
+img,
+svg {
     max-width: 100%;
 }
 
@@ -146,6 +147,7 @@ img {
 
 .central__titulo {
     margin-left: 3rem;
+    font-weight: 700;
 }
 
 .central__parrafo {
@@ -156,6 +158,13 @@ img {
 
 
 /** Habilidades **/
+
+.habilidades {
+    background-color: var(--cards);
+    border-radius: 3rem;
+    box-shadow: 10px 5px 5px black;
+    margin-bottom: 5rem;
+}
 
 .habilidades-logos {
     display: grid;
@@ -173,13 +182,30 @@ img {
 
 .habilidades__titulo {
     color: var(--blanco);
+    margin-top: 2rem;
 }
 
-.habilidades-logos__html {
+.icono {
     display: block;
+    margin-left: 6rem;
 }
 
 .habilidades-logos__texto {
     color: var(--blanco);
     text-align: center;
+    font-family: var(--fuenteParrafos);
+    font-weight: 300;
+}
+
+.habilidades-logos__texto__helpdesk {
+    color: var(--blanco);
+    text-align: center;
+    padding-bottom: 4rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        margin-left: 3rem;
+    }
 }
