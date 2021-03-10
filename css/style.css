@@ -141,19 +141,22 @@ svg {
     border-radius: 3rem;
     box-shadow: 10px 5px 5px black;
     line-height: 1.2;
-    font-family: var(--fuenteParrafos);
     font-weight: 300;
 }
 
 .central__titulo {
     margin-left: 3rem;
     font-weight: 700;
+    font-family: var(--fuenteHeading);
 }
 
 .central__parrafo {
     padding-bottom: 1.2rem;
     margin-left: 3rem;
     margin-right: 2.5rem;
+    font-weight: 300;
+    font-family: var(--fuenteParrafos);
+    line-height: normal;
 }
 
 
